@@ -27,7 +27,8 @@
 			<div ignore="1" class="previous-button"></div>
 		</div>
 	</div>
-	<p style=" color: grey; position: absolute; bottom: 0%; left: 50%; transform: translateX(-50%); z-index: 100;">Flipbook made using <a href="http://www.turnjs.com/">turn.js</a> for showcasing admission brochure of <a href="http://ggu.ac.in/">Guru Ghasidas Vishwavidyalaya, Bilaspur</a>.</p>
+	<p style=" color: grey; position: absolute; bottom: 0%; left: 50%; transform: translateX(-50%); z-index: 100; text-align: center;">Flipbook made using <a href="http://www.turnjs.com/">turn.js</a> for showcasing admission brochure of <a href="http://ggu.ac.in/">Guru Ghasidas Vishwavidyalaya, Bilaspur</a>. 
+		<br><b>Note: </b>Rotate to landscape on mobile devices for better experience.</p>
 </div>
 
 
@@ -98,18 +99,6 @@ function loadApp() {
 					// Show and hide navigation buttons
 
 					disableControls(page);
-					
-
-					$('.thumbnails .page-'+currentPage).
-						parent().
-						removeClass('current');
-
-					$('.thumbnails .page-'+page).
-						parent().
-						addClass('current');
-
-
-
 				},
 
 				turned: function(event, page, view) {
